@@ -14,7 +14,7 @@ header {
     max-width: 800px; /* Largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner */
     padding: 20px; /* Espaçamento interno */
-    border: 2px solid #ff0000; /* Cor da borda */
+    border: 2px solid #AE1100; /* Cor da borda */
     border-radius: 8px; /* Bordas arredondadas */
     background-color: #ffffff; /* Cor de fundo do contêiner */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -43,7 +43,7 @@ textarea {
     width: 100%; /* Largura total do textarea, ocupando toda a linha */
     height: 40px; /* Altura similar a um campo de texto */
     padding: 10px; /* Espaçamento interno */
-    border: 1px solid #ff0000; /* Cor da borda com 1px de espessura */
+    border: 1px solid #AE1100; /* Cor da borda com 1px de espessura */
     border-radius: 5px; /* Bordas arredondadas */
     margin-top: 10px; /* Espaço acima do textarea */
     resize: none; /* Impede redimensionamento */
@@ -69,11 +69,11 @@ button:hover {
 .result {
     margin-top: 20px; /* Espaço acima do resultado */
     font-weight: bold; /* Texto em negrito */
-    color: #d9534f; /* Cor do texto de resultado */
+    color: #AE1100; /* Cor do texto de resultado */
 }
 
 .Topcolor {
-    background-color: red;
+    background-color: #AE1100;
     color: white;
     margin-bottom: 30px;
     width: 85px;
@@ -83,5 +83,4 @@ button:hover {
 body {
     background-color: #333;
 }
-
 
