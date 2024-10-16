@@ -14,7 +14,7 @@ header {
     max-width: 800px; /* Largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner */
     padding: 20px; /* Espaçamento interno */
-    border: 2px solid #007BFF; /* Cor da borda */
+    border: 2px solid #ff0000; /* Cor da borda */
     border-radius: 8px; /* Bordas arredondadas */
     background-color: #ffffff; /* Cor de fundo do contêiner */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -43,7 +43,7 @@ textarea {
     width: 100%; /* Largura total do textarea, ocupando toda a linha */
     height: 40px; /* Altura similar a um campo de texto */
     padding: 10px; /* Espaçamento interno */
-    border: 1px solid #007BFF; /* Cor da borda com 1px de espessura */
+    border: 1px solid #ff0000; /* Cor da borda com 1px de espessura */
     border-radius: 5px; /* Bordas arredondadas */
     margin-top: 10px; /* Espaço acima do textarea */
     resize: none; /* Impede redimensionamento */
@@ -55,7 +55,7 @@ button {
     margin-top: 20px; /* Espaço acima do botão */
     padding: 10px 20px; /* Espaçamento interno do botão */
     font-size: 16px; /* Tamanho da fonte do botão */
-    background-color: #007BFF; /* Cor de fundo do botão */
+    background-color: #ff0000; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove borda padrão */
     border-radius: 5px; /* Bordas arredondadas */
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    background-color: #b30000; /* Cor do botão ao passar o mouse */
 }
 
 .result {
@@ -71,3 +71,17 @@ button:hover {
     font-weight: bold; /* Texto em negrito */
     color: #d9534f; /* Cor do texto de resultado */
 }
+
+.Topcolor {
+    background-color: red;
+    color: white;
+    margin-bottom: 30px;
+    width: 85px;
+
+}
+
+body {
+    background-color: #333;
+}
+
+
