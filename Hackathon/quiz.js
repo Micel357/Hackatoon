@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const faixaResultado = document.getElementById("faixa-resultado");
     const nomeInput = document.getElementById("nome");
 
-    // Respostas corretas
+    
     const respostasCorretas = {
         Q1: "Op1",
         Q2: "O3",
@@ -26,7 +26,7 @@ Q15:  "Firewalls, Antivírus e Antimalware, Criptografia,  Autenticação Multif
     };
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita o envio do formulário
+        event.preventDefault(); 
         let pontuacao = 0;
 
         // Calcula a pontuação
@@ -42,7 +42,7 @@ Q15:  "Firewalls, Antivírus e Antimalware, Criptografia,  Autenticação Multif
         nomeResultado.textContent = `Seu nome: ${nome}`;
         pontuacaoResultado.textContent = `Você acertou ${pontuacao} de ${Object.keys(respostasCorretas).length} perguntas.`;
 
-        // Define a faixa
+    
         if (pontuacao <= 5) {
             faixaResultado.textContent = "Faixa: Branco";
         } else if (pontuacao <= 8) {
@@ -51,6 +51,6 @@ Q15:  "Firewalls, Antivírus e Antimalware, Criptografia,  Autenticação Multif
             faixaResultado.textContent = "Faixa: Preta";
         }
 
-        resultadoDiv.style.display = "block"; // Exibe a div de resultado
+        resultadoDiv.style.display = "block"; 
     });
 });
