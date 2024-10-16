@@ -4,34 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="shortcut icon" href="Captura de tela 2024-10-16 134413.png" type="image/x-icon">
-    <link rel="stylesheet" href="design.css">
-    <script src="node.js"></script>
-
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="design.css"> 
     <title>Quiz</title>
 </head>
 <body>
-    <main><div class="quiz-container">
-        <div class="questao">
+    <header>
+        <h1> 
+            <em>Descubra qual é a sua faixa! </em>
+        </h1>
+    </header>
+    <main>
+        <form action="" method="post">
+        <div class="quiz-container">
+        <div id="questao01" class="questao">
             <p class="Topcolor">Questão 1</p>
         <strong> Quais são as principais áreas cibernéticas?
     
         </strong>
         
         <p>
-            <input type="radio" name="Q1" id="Op1"></input>
+            <input type="radio" name="Q1" id="Op1" required>
             <label for="Op1"> Segurança de Rede, Segurança de Dados.</label>
             </p>
             <p>
-            <input type="radio" name="Q1" id="Op2"></input>
+            <input type="radio" name="Q1" id="Op2">
             <label for="Op2"> Desenvolvimento de Hardware, Engenharia de Software.</label>
             </p>
             <p>
-            <input type="radio" name="Q1" id="Op3"></input>
+            <input type="radio" name="Q1" id="Op3">
             <label for="Op3"> Suporte Técnico, Segurança de Dados.</label>
             </p>
             <p>
-            <input type="radio" name="Q1" id="Op4"></input>
+            <input type="radio" name="Q1" id="Op4">
             <label for="Op4"> Segurança de Rede, Engenharia de Software.</label>
             </p>
         </div>
@@ -44,19 +49,19 @@
         </strong>
         
         <p>
-            <input type="radio" name="Q2" id="O1"></input>
+            <input type="radio" name="Q2" id="O1" required>
             <label for="O1">Malware, Manipulação de Dados em nuvem.</label>
             </p>
             <p>
-            <input type="radio" name="Q2" id="O2"></input>
+            <input type="radio" name="Q2" id="O2">
             <label for="O2"> Infecções de Adware, Ataques de Script em sites.</label>
             </p>
             <p>
-            <input type="radio" name="Q2" id="O3"></input>
+            <input type="radio" name="Q2" id="O3">
             <label for="O3">Ransomware, Malware.</label>
             </p>
             <p>
-            <input type="radio" name="Q2" id="O4"></input>
+            <input type="radio" name="Q2" id="O4">
             <label for="O4">Manipulação de Dados em nuvem, Fraudes em E-commerce.</label>
             </p>
         </div>
@@ -67,19 +72,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q3" id="P1"></input>
+                <input type="radio" name="Q3" id="P1" required>
                 <label for="P1"> DataFog, FileBouncer, BackupMirage.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q3" id="P2"></input>
+                <input type="radio" name="Q3" id="P2">
                 <label for="P2">DataFog, BackupMirage, Integridade.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q3" id="P3"></input>
+                <input type="radio" name="Q3" id="P3">
                 <label for="P3">Confidencialidade, Integridade e Disponibilidade.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q3" id="P4"></input>
+                <input type="radio" name="Q3" id="P4">
                 <label for="P4">Confidencialidade, DataFog, Disponibilidade.</label>
         </div>
         <br>
@@ -89,19 +94,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q4" id="M1"></input>
+                <input type="radio" name="Q4" id="M1" required>
                 <label for="M1">WordPress</label>
                 </p>
                 <p>
-                <input type="radio" name="Q4" id="M2"></input>
+                <input type="radio" name="Q4" id="M2">
                 <label for="M2">MySQL</label>
                 </p>
                 <p>
-                <input type="radio" name="Q4" id="M3"></input>
+                <input type="radio" name="Q4" id="M3">
                 <label for="M3">Hadoop</label>
                 </p>
                 <p>
-                <input type="radio" name="Q4" id="M4"></input>
+                <input type="radio" name="Q4" id="M4">
                 <label for="M4">Firewalls</label>
         </div>
         <br>
@@ -111,19 +116,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q5" id="A1"></input>
+                <input type="radio" name="Q5" id="A1" required>
                 <label for="A1"> A, IA pode ser usada para detectar ameaças e anomalias, protege contra ataques Phishing.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q5" id="A2"></input>
+                <input type="radio" name="Q5" id="A2">
                 <label for="A2">A, IA consegue detectar ameaças automaticamente e rapidamente, ela elimina 100% dos vírus.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q5" id="A3"></input>
+                <input type="radio" name="Q5" id="A3">
                 <label for="A3">Assim que implementa a IA ela não precisa ser monitorada, ela pode monitorar os dados sozinha</label>
                 </p>
                 <p>
-                <input type="radio" name="Q5" id="A4"></input>
+                <input type="radio" name="Q5" id="A4">
                 <label for="A4">Todas as soluções da IA são iguais, ela pode operar de forma independente das indústrias, a IA poder resolver todos os problemas automaticamente.</label>
         </div>
         <br>
@@ -134,19 +139,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q6" id="B1"></input>
+                <input type="radio" name="Q6" id="B1" required>
                 <label for="B1">Os softwares antivírus são suficientes para proteger contra todas as ameaças.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q6" id="B2"></input>
+                <input type="radio" name="Q6" id="B2">
                 <label for="B2">Usar Wi-Fi público é seguro, desde que você não acesse informações confidenciais.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q6" id="B3"></input>
+                <input type="radio" name="Q6" id="B3">
                 <label for="B3">Todos os funcionários têm um papel na cibersegurança, e a conscientização é fundamental para evitar ataques.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q6" id="B4"></input>
+                <input type="radio" name="Q6" id="B4">
                 <label for="B4">A cibersegurança é responsabilidade apenas da equipe de TI.</label>
         </div>
         <br>
@@ -156,19 +161,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q7" id="C1"></input>
+                <input type="radio" name="Q7" id="C1" required>
                 <label for="C1">Políticas de segurança são fundamentais para a proteção e devem ser inovadoras e seguidas.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q7" id="C2"></input>
+                <input type="radio" name="Q7" id="C2">
                 <label for="C2">As senhas podem ser facilmente lembradas, então não é preciso usar um gerenciador de senhas</label>
                 </p>
                 <p>
-                <input type="radio" name="Q7" id="C3"></input>
+                <input type="radio" name="Q7" id="C3">
                 <label for="C3">Muitas ameaças podem estar presentes sem que você perceba, como keyloggers ou malware que não apresentam sintomas imediatos.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q7" id="C4"></input>
+                <input type="radio" name="Q7" id="C4">
                 <label for="C4">As ameaças evoluem constantemente, e a segurança deve ser monitorada e atualizada regularmente.</label>
         </div>
         <br>
@@ -178,19 +183,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q8" id="D1"></input>
+                <input type="radio" name="Q8" id="D1" required>
                 <label for="D1">Simplificar o processo de login.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q8" id="D2"></input>
+                <input type="radio" name="Q8" id="D2">
                 <label for="D2">Adicionar camadas extras.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q8" id="D3"></input>
+                <input type="radio" name="Q8" id="D3">
                 <label for="D3">Proteger dados apenas em dispositivos móveis.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q8" id="D4"></input>
+                <input type="radio" name="Q8" id="D4">
                 <label for="D4">Reduzir o número de senhas possíveis.</label>
         </div>
         <br>
@@ -200,19 +205,19 @@
             </strong></p>
             
             <p>
-                <input type="radio" name="Q9" id="E1"></input>
+                <input type="radio" name="Q9" id="E1" required>
                 <label for="E1">Roubar dados de cartão.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q9" id="E2"></input>
+                <input type="radio" name="Q9" id="E2">
                 <label for="E2">Destruir sistemas de informação.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q9" id="E3"></input>
+                <input type="radio" name="Q9" id="E3">
                 <label for="E3"> Capturar informações pessoais e credenciais de acesso.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q9" id="E4"></input>
+                <input type="radio" name="Q9" id="E4">
                 <label for="E4"> Iniciar um ataque de negação de serviço (DDoS).</label>
         </div>
         <br>
@@ -220,22 +225,23 @@
             <p  class="Topcolor">Questão 10</p>
             <strong>Qual das opções a seguir é um exemplo de "ransomware"?
             </strong></p>
-            
-            <p>
-                <input type="radio" name="Q10" id="F1"></input>
-                <label for="F1">Um programa que criptografa arquivos e pede um resgate para desbloqueá-los.</label>
+                <p>
+                    <input type="radio" name="Q10" id="F1" required>
+                    <label for="F1">Um programa que criptografa arquivos e pede um resgate para desbloqueá-los.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q10" id="F2"></input>
-                <label for="F2">Um vírus que se replica automaticamente.</label>
+                    <input type="radio" name="Q10" id="F2">
+                    <label for="F2">Um vírus que se replica automaticamente.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q10" id="F3"></input>
-                <label for="F3"> Software que melhora o desempenho do PC.</label>
+                    <input type="radio" name="Q10" id="F3">
+                    <label for="F3">Software que melhora o desempenho do PC.</label>
                 </p>
                 <p>
-                <input type="radio" name="Q10" id="F4"></input>
-                <label for="F4">Um firewall que bloqueia acessos não autorizados.</label>
+                    <input type="radio" name="Q10" id="F4">
+                    <label for="F4">Um firewall que bloqueia acessos não autorizados.</label>
+                </p>
+                
         </div>
         <br>
         <div class="questao">
@@ -244,7 +250,7 @@
             </strong></p>
             
             <p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta" required></textarea>
         </div>
         <br>
         <div class="questao">
@@ -253,7 +259,7 @@
             </strong></p>
             
             <p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta" required></textarea>
         </div>
         <br>
         <div class="questao">
@@ -262,7 +268,7 @@
             </strong></p>
             
             <p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta" required></textarea>
         </div>
         <br>
         <div class="questao">
@@ -271,7 +277,7 @@
             </strong></p>
             
             <p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta" required></textarea>
         </div>
         <br>
         <div class="questao">
@@ -280,11 +286,12 @@
             </strong></p>
             
             <p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta"></textarea>
-                <button>Enviar Resposta</button>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Insira sua resposta" required></textarea>
+                <button type="submit">Enviar Resposta</button>
         </div>
     </div>
+</form>
     </main>
 </body>
+<script src="node.js"></script>
 </html>
-
