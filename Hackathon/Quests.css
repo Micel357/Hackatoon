@@ -40,13 +40,16 @@ input[type="radio"] {
 }
 
 textarea {
-    width: 80%; /* Largura total do textarea */
+    width: 100%; /* Largura total do textarea, ocupando toda a linha */
+    height: 40px; /* Altura similar a um campo de texto */
     padding: 10px; /* Espaçamento interno */
-    border: 2px solid #007BFF; /* Cor da borda */
+    border: 1px solid #007BFF; /* Cor da borda com 1px de espessura */
     border-radius: 5px; /* Bordas arredondadas */
     margin-top: 10px; /* Espaço acima do textarea */
-    resize: vertical; /* Permite redimensionar verticalmente */
+    resize: none; /* Impede redimensionamento */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo da largura */
 }
+
 
 button {
     margin-top: 20px; /* Espaço acima do botão */
