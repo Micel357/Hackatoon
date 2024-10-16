@@ -1,6 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Cor de fundo */
+    margin: 0;
+    padding: 20px; /* Espaçamento ao redor do corpo */
+}
 
 header {
-    background-color: Red;
-    color: white;
-    height: 10px 10px;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+.quiz-container {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px; /* Espaçamento interno */
+    border: 2px solid #007BFF; /* Cor da borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Cor de fundo do contêiner */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    color: #333; /* Cor do título */
+}
+
+p {
+    color: #555; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento acima e abaixo dos parágrafos */
+}
+
+img {
+    max-width: 100%; /* Imagem não ultrapassa a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Espaço entre o rádio e o rótulo */
+}
+
+textarea {
+    width: 80%; /* Largura total do textarea */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #007BFF; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-top: 10px; /* Espaço acima do textarea */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button {
+    margin-top: 20px; /* Espaço acima do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.result {
+    margin-top: 20px; /* Espaço acima do resultado */
+    font-weight: bold; /* Texto em negrito */
+    color: #d9534f; /* Cor do texto de resultado */
 }
