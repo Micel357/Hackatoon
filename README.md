@@ -2,8 +2,10 @@ Refazendo um trabalho, no qual tive a oportunidade de fazer de uma ótima equipe
    A equipe na qual fiz parte foi exelente! 
    Composto pelos seguintes Devs:
    
-   kelvinlucs   
-   marialuisamatos 
+   kelvinlucs  
+   
+   marialuisamatos
+   
    vitorsantabi
 
      Sigam todos !!
