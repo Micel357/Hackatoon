@@ -1,0 +1,491 @@
+/* ============================================
+   PALETA DE CORES VINHO
+   ============================================ */
+:root {
+    --cor-primaria: #800020;        /* Vinho profundo */
+    --cor-secundaria: #A52A2A;      /* Bordô */
+    --cor-fundo-claro: #F8F8F8;     /* Branco suave */
+    --cor-fundo-container: #FFFFFF; /* Branco puro */
+    --cor-texto-principal: #333333; /* Cinza escuro */
+    --cor-texto-destaque: #FFFFFF;  /* Branco */
+    --cor-borda: #800020;           /* Vinho para bordas */
+}
+
+/* ============================================
+   ESTILOS GLOBAIS
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo-claro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* ============================================
+   HEADER E TÍTULOS
+   ============================================ */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.2);
+}
+
+h1 {
+    color: var(--cor-texto-destaque);
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 em {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* ============================================
+   CONTAINER PRINCIPAL DO QUIZ
+   ============================================ */
+.quiz-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--cor-fundo-container);
+    border: 3px solid var(--cor-primaria);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(128, 0, 32, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.quiz-container:hover {
+    box-shadow: 0 12px 35px rgba(128, 0, 32, 0.2);
+}
+
+/* ============================================
+   SEÇÃO DE NOME
+   ============================================ */
+.nome {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor-fundo-claro);
+}
+
+.nome label {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.nome input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-principal);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.nome input:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 0 8px rgba(165, 42, 42, 0.3);
+    background-color: var(--cor-fundo-container);
+}
+
+.nome input::placeholder {
+    color: #999;
+}
+
+/* ============================================
+   QUESTÕES
+   ============================================ */
+.questao {
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: var(--cor-fundo-container);
+    transition: all 0.3s ease;
+}
+
+.questao:hover {
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 4px 12px rgba(165, 42, 42, 0.1);
+}
+
+.questao strong {
+    display: block;
+    font-size: 1.15em;
+    color: var(--cor-texto-principal);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.Topcolor {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    color: var(--cor-texto-destaque);
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   OPÇÕES DE RESPOSTA
+   ============================================ */
+.questao p {
+    margin: 12px 0;
+    color: var(--cor-texto-principal);
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.questao p:hover {
+    color: var(--cor-primaria);
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: var(--cor-primaria);
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:hover {
+    transform: scale(1.1);
+}
+
+input[type="radio"]:checked {
+    accent-color: var(--cor-secundaria);
+}
+
+.questao label {
+    cursor: pointer;
+    flex: 1;
+    transition: all 0.2s ease;
+}
+
+.questao label:hover {
+    font-weight: 500;
+}
+
+/* ============================================
+   TEXTAREA
+   ============================================ */
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-principal);
+    font-family: inherit;
+    font-size: 1em;
+    margin-top: 10px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 0 8px rgba(165, 42, 42, 0.3);
+    background-color: var(--cor-fundo-container);
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+button {
+    margin-top: 25px;
+    padding: 14px 35px;
+    font-size: 1.05em;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    color: var(--cor-texto-destaque);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(128, 0, 32, 0.2);
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(128, 0, 32, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(128, 0, 32, 0.2);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ============================================
+   SEÇÃO DE RESULTADO
+   ============================================ */
+#resultado {
+    display: none;
+    margin-top: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(128, 0, 32, 0.2);
+    color: var(--cor-texto-destaque);
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#resultado p {
+    color: var(--cor-texto-destaque);
+    font-size: 1.15em;
+    margin: 12px 0;
+    font-weight: 500;
+}
+
+#nome-resultado {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#pontuacao-resultado {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#faixa-resultado {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   IMAGENS
+   ============================================ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 15px 0;
+}
+
+/* ============================================
+   CLASSE DE RESULTADO GENÉRICA
+   ============================================ */
+.result {
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    padding: 12px;
+    background-color: rgba(128, 0, 32, 0.05);
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: 4px;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    header {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .quiz-container {
+        padding: 25px;
+        margin: 0 10px;
+    }
+
+    .questao {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .questao strong {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    #resultado {
+        padding: 20px;
+    }
+
+    #resultado p {
+        font-size: 1em;
+    }
+
+    #nome-resultado {
+        font-size: 1.1em;
+    }
+
+    #pontuacao-resultado {
+        font-size: 1em;
+    }
+
+    #faixa-resultado {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 15px 10px;
+        margin-bottom: 20px;
+    }
+
+    .quiz-container {
+        padding: 20px;
+        margin: 0;
+        border-width: 2px;
+    }
+
+    .questao {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .questao strong {
+        font-size: 0.95em;
+    }
+
+    .Topcolor {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .questao p {
+        margin: 10px 0;
+    }
+
+    input[type="radio"] {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+
+    #resultado {
+        padding: 15px;
+    }
+
+    #resultado p {
+        font-size: 0.95em;
+    }
+
+    #nome-resultado {
+        font-size: 1em;
+    }
+
+    #faixa-resultado {
+        font-size: 1.1em;
+    }
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+:focus-visible {
+    outline: 2px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+/* Melhor contraste para modo escuro do navegador */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+    }
+
+    .quiz-container,
+    .questao {
+        background-color: #2a2a2a;
+        color: #f0f0f0;
+    }
+
+    .Topcolor {
+        background: linear-gradient(135deg, #a52a2a 0%, #800020 100%);
+    }
+
+    .nome input,
+    textarea {
+        background-color: #333;
+        color: #f0f0f0;
+        border-color: var(--cor-secundaria);
+    }
+}

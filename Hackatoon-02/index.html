@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz de Cibersegurança - Descubra sua faixa de conhecimento">
+    <meta name="theme-color" content="#800020">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="design.css"> 
+    <title>Quiz de Cibersegurança - Descubra sua Faixa</title>
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><em>🔐 Descubra qual é a sua faixa em Cibersegurança!</em></h1>
+        <p style="color: white; margin-top: 10px; font-size: 0.95em; opacity: 0.95;">Teste seus conhecimentos e descubra seu nível de expertise</p>
+    </header>
+
+    <main>
+        <form action="" method="post" id="quizForm">
+            <div class="quiz-container">
+                
+                <!-- SEÇÃO DE IDENTIFICAÇÃO -->
+                <section class="nome">
+                    <label for="nome">👤 Digite seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+                </section>
+
+                <!-- RESULTADO (Exibido ao final) -->
+                <section id="resultado" style="display: none;">
+                    <p id="nome-resultado"></p>
+                    <p id="pontuacao-resultado"></p>
+                    <p id="faixa-resultado"></p>
+                    <button type="button" onclick="location.reload()" style="margin-top: 20px; background: rgba(255,255,255,0.2); border: 2px solid white;">Fazer Quiz Novamente</button>
+                </section>
+
+                <!-- QUESTÃO 1 -->
+                <section id="questao01" class="questao">
+                    <p class="Topcolor">Questão 1 de 15</p>
+                    <strong>Quais são as principais áreas cibernéticas?</strong>
+                    <p>
+                        <input type="radio" name="Q1" id="Op1" required>
+                        <label for="Op1">Segurança de Rede, Segurança de Dados.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q1" id="Op2">
+                        <label for="Op2">Desenvolvimento de Hardware, Engenharia de Software.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q1" id="Op3">
+                        <label for="Op3">Suporte Técnico, Segurança de Dados.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q1" id="Op4">
+                        <label for="Op4">Segurança de Rede, Engenharia de Software.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 2 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 2 de 15</p>
+                    <strong>Quais são as principais ameaças?</strong>
+                    <p>
+                        <input type="radio" name="Q2" id="O1" required>
+                        <label for="O1">Malware, Manipulação de Dados em nuvem.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q2" id="O2">
+                        <label for="O2">Infecções de Adware, Ataques de Script em sites.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q2" id="O3">
+                        <label for="O3">Ransomware, Malware.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q2" id="O4">
+                        <label for="O4">Manipulação de Dados em nuvem, Fraudes em E-commerce.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 3 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 3 de 15</p>
+                    <strong>Quais são os três conceitos fundamentais da Segurança?</strong>
+                    <p>
+                        <input type="radio" name="Q3" id="P1" required>
+                        <label for="P1">DataFog, FileBouncer, BackupMirage.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q3" id="P2">
+                        <label for="P2">DataFog, BackupMirage, Integridade.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q3" id="P3">
+                        <label for="P3">Confidencialidade, Integridade e Disponibilidade.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q3" id="P4">
+                        <label for="P4">Confidencialidade, DataFog, Disponibilidade.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 4 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 4 de 15</p>
+                    <strong>Quais são as ferramentas e tecnologias de segurança?</strong>
+                    <p>
+                        <input type="radio" name="Q4" id="M1" required>
+                        <label for="M1">WordPress</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q4" id="M2">
+                        <label for="M2">MySQL</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q4" id="M3">
+                        <label for="M3">Hadoop</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q4" id="M4">
+                        <label for="M4">Firewalls</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 5 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 5 de 15</p>
+                    <strong>Como a inteligência artificial pode ajudar na cibersegurança?</strong>
+                    <p>
+                        <input type="radio" name="Q5" id="A1" required>
+                        <label for="A1">IA pode ser usada para detectar ameaças e anomalias, protege contra ataques Phishing.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q5" id="A2">
+                        <label for="A2">IA consegue detectar ameaças automaticamente e rapidamente, ela elimina 100% dos vírus.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q5" id="A3">
+                        <label for="A3">Assim que implementa a IA ela não precisa ser monitorada, ela pode monitorar os dados sozinha.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q5" id="A4">
+                        <label for="A4">Todas as soluções da IA são iguais, ela pode operar de forma independente das indústrias, a IA pode resolver todos os problemas automaticamente.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 6 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 6 de 15</p>
+                    <strong>Marque a alternativa CORRETA sobre a cibersegurança:</strong>
+                    <p>
+                        <input type="radio" name="Q6" id="B1" required>
+                        <label for="B1">Os softwares antivírus são suficientes para proteger contra todas as ameaças.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q6" id="B2">
+                        <label for="B2">Usar Wi-Fi público é seguro, desde que você não acesse informações confidenciais.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q6" id="B3">
+                        <label for="B3">Todos os funcionários têm um papel na cibersegurança, e a conscientização é fundamental para evitar ataques.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q6" id="B4">
+                        <label for="B4">A cibersegurança é responsabilidade apenas da equipe de TI.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 7 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 7 de 15</p>
+                    <strong>Marque a opção INCORRETA sobre a cibersegurança:</strong>
+                    <p>
+                        <input type="radio" name="Q7" id="C1" required>
+                        <label for="C1">Políticas de segurança são fundamentais para a proteção e devem ser inovadoras e seguidas.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q7" id="C2">
+                        <label for="C2">As senhas podem ser facilmente lembradas, então não é preciso usar um gerenciador de senhas.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q7" id="C3">
+                        <label for="C3">Muitas ameaças podem estar presentes sem que você perceba, como keyloggers ou malware que não apresentam sintomas imediatos.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q7" id="C4">
+                        <label for="C4">As ameaças evoluem constantemente, e a segurança deve ser monitorada e atualizada regularmente.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 8 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 8 de 15</p>
+                    <strong>Qual é o propósito da autenticação multifator (MFA)?</strong>
+                    <p>
+                        <input type="radio" name="Q8" id="D1" required>
+                        <label for="D1">Simplificar o processo de login.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q8" id="D2">
+                        <label for="D2">Adicionar camadas extras de segurança.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q8" id="D3">
+                        <label for="D3">Proteger dados apenas em dispositivos móveis.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q8" id="D4">
+                        <label for="D4">Reduzir o número de senhas possíveis.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 9 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 9 de 15</p>
+                    <strong>Qual é o principal objetivo de um ataque de phishing?</strong>
+                    <p>
+                        <input type="radio" name="Q9" id="E1" required>
+                        <label for="E1">Roubar dados de cartão.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q9" id="E2">
+                        <label for="E2">Destruir sistemas de informação.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q9" id="E3">
+                        <label for="E3">Capturar informações pessoais e credenciais de acesso.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q9" id="E4">
+                        <label for="E4">Iniciar um ataque de negação de serviço (DDoS).</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 10 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 10 de 15</p>
+                    <strong>Qual das opções a seguir é um exemplo de "ransomware"?</strong>
+                    <p>
+                        <input type="radio" name="Q10" id="F1" required>
+                        <label for="F1">Um programa que criptografa arquivos e pede um resgate para desbloqueá-los.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q10" id="F2">
+                        <label for="F2">Um vírus que se replica automaticamente.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q10" id="F3">
+                        <label for="F3">Software que melhora o desempenho do PC.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q10" id="F4">
+                        <label for="F4">Um firewall que bloqueia acessos não autorizados.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 11 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 11 de 15</p>
+                    <strong>O que é um "keylogger"?</strong>
+                    <p>
+                        <input type="radio" name="Q11" id="G1" required>
+                        <label for="G1">Um tipo de malware que registra teclas digitadas em um teclado para roubar informações.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q11" id="G2">
+                        <label for="G2">Um programa que melhora a velocidade de digitação.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q11" id="G3">
+                        <label for="G3">Um dispositivo físico que conecta o teclado ao computador.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q11" id="G4">
+                        <label for="G4">Um software que registra logs de acesso ao sistema.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 12 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 12 de 15</p>
+                    <strong>Qual é a função principal de um antivírus?</strong>
+                    <p>
+                        <input type="radio" name="Q12" id="H1" required>
+                        <label for="H1">Melhorar o desempenho do computador.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q12" id="H2">
+                        <label for="H2">Detectar e remover malware do sistema.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q12" id="H3">
+                        <label for="H3">Gerenciar senhas e credenciais.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q12" id="H4">
+                        <label for="H4">Bloquear acesso à internet.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 13 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 13 de 15</p>
+                    <strong>O que é engenharia social?</strong>
+                    <p>
+                        <input type="radio" name="Q13" id="I1" required>
+                        <label for="I1">Uma técnica de programação para redes sociais.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q13" id="I2">
+                        <label for="I2">Manipulação psicológica de pessoas para obter informações úteis.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q13" id="I3">
+                        <label for="I3">Um protocolo de comunicação entre computadores.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q13" id="I4">
+                        <label for="I4">Um sistema de backup automático.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 14 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 14 de 15</p>
+                    <strong>O que significa SIEM em cibersegurança?</strong>
+                    <p>
+                        <input type="radio" name="Q14" id="J1" required>
+                        <label for="J1">Sistema de Encriptação de Informações Eletrônicas.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q14" id="J2">
+                        <label for="J2">Gerenciamento de informações e eventos de segurança.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q14" id="J3">
+                        <label for="J3">Serviço de Integração de Empresas Modernas.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q14" id="J4">
+                        <label for="J4">Sistema de Identificação Eletrônica de Máquinas.</label>
+                    </p>
+                </section>
+
+                <!-- QUESTÃO 15 -->
+                <section class="questao">
+                    <p class="Topcolor">Questão 15 de 15</p>
+                    <strong>Quais são as principais medidas de proteção em cibersegurança?</strong>
+                    <p>
+                        <input type="radio" name="Q15" id="K1" required>
+                        <label for="K1">Firewalls, Antivírus e Antimalware, Criptografia, Autenticação Multifator (MFA), Backups de Dados, Treinamento de Conscientização em Segurança, Monitoramento de Rede, Segurança em Nuvem, Políticas de Segurança, Respostas a Incidentes, Gerenciamento de Patches.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q15" id="K2">
+                        <label for="K2">Apenas usar antivírus é suficiente.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q15" id="K3">
+                        <label for="K3">Senhas fortes são a única medida necessária.</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="Q15" id="K4">
+                        <label for="K4">Criptografia é obsoleta e não é mais necessária.</label>
+                    </p>
+                </section>
+
+                <!-- BOTÃO DE ENVIO -->
+                <button type="submit">✓ Enviar Respostas</button>
+
+            </div>
+        </form>
+    </main>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 0.9em;">
+        <p>© 2025 Quiz de Cibersegurança - Hackathon Project | Desenvolvido com ❤️ para educação em segurança</p>
+    </footer>
+</body>
+</html>
